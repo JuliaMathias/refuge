@@ -24,6 +24,7 @@ defmodule RefugeWeb.Router do
     post "/bears", BearController, :create
     put "/bears/:id", BearController, :upgrade
     patch "/bears/:id", BearController, :upgrade
+    delete "/bears/:id", BearController, :delete
   end
 
   # Other scopes may use custom stacks.
