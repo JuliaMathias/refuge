@@ -21,6 +21,7 @@ defmodule RefugeWeb.Router do
     get "/bears/new", BearController, :new
     get "/bears/:id", BearController, :show
     get "/bears/:id/edit", BearController, :edit
+    post "/bears", BearController, :create
   end
 
   # Other scopes may use custom stacks.
